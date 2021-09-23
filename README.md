@@ -1,0 +1,1 @@
+# sinoptico-del-poder
