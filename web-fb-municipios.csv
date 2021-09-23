@@ -1,0 +1,439 @@
+departamento,municipio,url,tipo
+Beni,Loreto,,
+Beni,San Javier,,
+Beni,Santa Rosa,,
+Beni,Huacaraje,,
+Beni,San Joaquín,,
+Beni,Magdalena,,
+Beni,Santa Rosa,,
+Beni,Santa Ana,,
+Beni,San Borja,,
+Beni,Reyes,,
+Beni,Puerto Siles,,
+Beni,Exaltación,,
+Beni,Riberalta,,
+Beni,Alto Beni,,
+Beni,San Ramón,,
+Beni,San Andrés,,
+Beni,Baures,,
+Beni,Puerto Menor de Rurrenabaque,https://rurrenabaque.gob.bo/,Sitio web
+Beni,San Javier,https://www.facebook.com/gamsanxavier/,Página de Facebook
+Beni,Huacaraje,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-Huacaraje-1521621167932720,Página de Facebook
+Beni,San Joaquín,https://www.facebook.com/Gobierno-Autonomo-Municipal-De-San-Joaquin-523509238006618/,Página de Facebook
+Beni,Puerto Siles,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-de-Puerto-Siles-103492161927689/?ref=nf&hc_ref=ARR_0zN46Vf1yZVtCOpIxDxB3JXXJ_lvi0xhxUl1mvnS6d-F27AvIfiLeiebb5BJg5k,Página de Facebook
+Beni,Guayaramerín,https://guayaramerin.gob.bo/,Sitio web
+Beni,Baures,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-De-Baures-1902723556626232/,Página de Facebook
+Beni,Trinidad,https://www.trinidad.gob.bo/,Sitio web
+Chuquisaca,San Lucas,,
+Chuquisaca,Culpina,,
+Chuquisaca,Las Carreras,,
+Chuquisaca,Villa Abecia,,
+Chuquisaca,Azurduy,,
+Chuquisaca,Tarvita,,
+Chuquisaca,El Villar,,
+Chuquisaca,Huacaya,,
+Chuquisaca,Huacareta,,
+Chuquisaca,Monteagudo,,
+Chuquisaca,Alcalá,,
+Chuquisaca,Villa Ricardo Mugia - Icla,,
+Chuquisaca,Tomina,,
+Chuquisaca,Tarabuco,,
+Chuquisaca,Zudañez,,
+Chuquisaca,Villa Vaca Guzmán,,
+Chuquisaca,Mojocoya,,
+Chuquisaca,Presto,,
+Chuquisaca,Poroma,,
+Chuquisaca,Villa Charcas,,
+Chuquisaca,Camargo,,
+Chuquisaca,Sopachui,http://www.sopachuy.com/,Sitio web
+Chuquisaca,Yotala,http://www.yotala.gob.bo/,Sitio web
+Chuquisaca,Villa Serrano,http://www.villaserranoturistico.com/,Sitio web
+Chuquisaca,varios,http://www.chuquisaca.gob.bo/,Sitio web
+Chuquisaca,San Lucas,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-de-San-Lucas-109588120661423/,Página de Facebook
+Chuquisaca,Culpina,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-de-Culpina-314106362337198/,Página de Facebook
+Chuquisaca,Incahuasi,https://incahuasi.gob.bo/,Sitio web
+Chuquisaca,Las Carreras,https://www.facebook.com/GobiernoMunicipalLasCarreras/,Página de Facebook
+Chuquisaca,Villa Abecia,https://www.facebook.com/GMvillaabecia/,Página de Facebook
+Chuquisaca,Azurduy,https://www.facebook.com/GobiernoMunicipalAzurduy/,Página de Facebook
+Chuquisaca,Monteagudo,https://www.facebook.com/gam.monteagudo/,Página de Facebook
+Chuquisaca,Yamparáez,http://gamyamparaez.com/,Sitio web
+Chuquisaca,Zudañez,https://www.facebook.com/Gobierno-Autonomo-Municipal-de-Zuda%C3%B1ez-Tacopaya-599995500201671/,Página de Facebook
+Chuquisaca,Villa Vaca Guzmán,https://www.facebook.com/gamvillavacaguzman/,Página de Facebook
+Chuquisaca,Padilla,https://www.padillita.com/,Sitio web
+Chuquisaca,Villa Serrano,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-De-Villa-Serrano-292248530964137/,Página de Facebook
+Chuquisaca,Macharetí,https://machareti.org/,Sitio web
+Chuquisaca,Sucre,https://sucre.bo/,Sitio web
+Chuquisaca,Villa Charcas,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-de-Villa-Charcas-1749982155248741/,Página de Facebook
+Cochabamba,Aiquile,,
+Cochabamba,Villa Rivero,,
+Cochabamba,Arbieto,,
+Cochabamba,Sicaya,,
+Cochabamba,Capinota,,
+Cochabamba,Arque,,
+Cochabamba,Omereque,,
+Cochabamba,Totora,,
+Cochabamba,Sipesipe,,
+Cochabamba,Tarata,,
+Cochabamba,Totora,,
+Cochabamba,Morochata,,
+Cochabamba,Sacabamba,,
+Cochabamba,Toco,,
+Cochabamba,Villa Gualberto Villarroel,,
+Cochabamba,Tacachi,,
+Cochabamba,Tacopaya,,
+Cochabamba,Santivañez,,
+Cochabamba,Arani,,
+Cochabamba,Tapacarí,,
+Cochabamba,Cocapata,,
+Cochabamba,Pocona,,
+Cochabamba,Ayopaya,,
+Cochabamba,Pojo,,
+Cochabamba,Colomi,,
+Cochabamba,Alalay,,
+Cochabamba,Vila Vila,,
+Cochabamba,Mizque,,
+Cochabamba,Pasorapa,,
+Cochabamba,Quillacollo,http://www.quillacollo.gob.bo/,Sitio web
+Cochabamba,Vinto,http://www.gob.a.m.vinto.bo.com/,Sitio web
+Cochabamba,Bolivar,http://gambolivar.com/,Sitio web
+Cochabamba,Shinahota,http://www.shinahota.com.bo/,Sitio web
+Cochabamba,Entre Ríos,http://entrerioscochabamba.gob.bo/,Sitio web
+Cochabamba,varios,http://saig.gobernaciondecochabamba.bo/estadistica/,Sitio web
+Cochabamba,Aiquile,https://www.facebook.com/GAMAIQUILE/,Página de Facebook
+Cochabamba,Villa Rivero,https://www.facebook.com/Gobierno-Autonomo-Municipal-de-Villa-Rivero-1652719168310209/,Página de Facebook
+Cochabamba,Arbieto,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-de-Arbieto-475597872841842/,Página de Facebook
+Cochabamba,Arque,https://www.facebook.com/GAM-Arque-110380797357627/,Página de Facebook
+Cochabamba,San Benito,https://sanbenitobolivia.com/,Sitio web
+Cochabamba,San Benito,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-de-San-Benito-661840184175966/,Página de Facebook
+Cochabamba,Omereque,https://www.facebook.com/gamomereq,Página de Facebook
+Cochabamba,Entre Ríos,http://entrerioscochabamba.gob.bo/,Sitio web
+Cochabamba,Quillacollo,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-de-Quillacollo-148236102706056/,Página de Facebook
+Cochabamba,Sacaba,https://sacaba.gob.bo/,Sitio web
+Cochabamba,Sacaba,https://www.facebook.com/gob.municipal.sacaba/,Página de Facebook
+Cochabamba,Tiquipaya,http://www.tiquipaya.gob.bo/,Sitio web
+Cochabamba,Tiquipaya,https://www.facebook.com/gamtiquipaya/?fref=ts,Página de Facebook
+Cochabamba,Colcapirhua,https://www.colcapirhua.gob.bo/,Sitio web
+Cochabamba,Tarata,https://www.facebook.com/esteban.arze.336,Página de Facebook
+Cochabamba,Anzaldo,http://anzaldobolivia.com/,Sitio web
+Cochabamba,Toco,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-de-Toco-1605495173064992/,Página de Facebook
+Cochabamba,Cliza,https://cliza.gob.bo/,Sitio web
+Cochabamba,Cliza,https://cliza.gob.bo/transparencia,Sitio web
+Cochabamba,Tolata,http://gamtolataturistica.com/,Sitio web
+Cochabamba,Cochabamba,https://www.cochabamba.bo/,Sitio web
+Cochabamba,Arani,https://www.facebook.com/GAMAARANI/,Página de Facebook
+Cochabamba,Punata,https://punata.gob.bo/,Sitio web
+Cochabamba,Tapacarí,https://www.facebook.com/gamttapacari,Página de Facebook
+Cochabamba,Villa Tunari,https://www.villatunari.gob.bo/,Sitio web
+Cochabamba,Chimoré,https://chimore.gob.bo/,Sitio web
+Cochabamba,Tiraque,http://www.tiraque.com.bo/,Sitio web
+Cochabamba,Vacas,https://municipiovacas.gob.bo/,Sitio web
+Cochabamba,Puerto Villarroel,http://puertovillarroel.gob.bo/,Sitio web
+Cochabamba,Colomi,https://www.facebook.com/Gobierno-Autonomo-Municipal-De-Colomi-1413748238859252/,Página de Facebook
+La Paz,Chacarilla,,
+La Paz,Papel Pampa,,
+La Paz,Umala,,
+La Paz,San Pedro de Curahuara,,
+La Paz,Corocoro,,
+La Paz,Sapahaqui,,
+La Paz,Cairoma,,
+La Paz,Colquiri,,
+La Paz,Ichoca,,
+La Paz,Villa Ancoraimes,,
+La Paz,Puerto Mayor de Carabuco,,
+La Paz,Mocomoco,,
+La Paz,Inquisivi,,
+La Paz,Irupana,,
+La Paz,Chulumani,,
+La Paz,Nazacara de Pacajes,,
+La Paz,Caquiaviri,,
+La Paz,Luribay,,
+La Paz,Collana,,
+La Paz,Catacora,,
+La Paz,Yaco,,
+La Paz,Calacoto,,
+La Paz,Patacamaya,,
+La Paz,Colquencha,,
+La Paz,Santiago de Machaca,,
+La Paz,Malla,,
+La Paz,Comanche,,
+La Paz,Calamarca,,
+La Paz,Villa Libertad Licoma,,
+La Paz,Quime,,
+La Paz,Huatajata,,
+La Paz,Laja,,
+La Paz,Mecapaca,,
+La Paz,Palca,,
+La Paz,Achocalla,,
+La Paz,Yanacachi,,
+La Paz,Jesús de Machaka,,
+La Paz,Puerto Mayor de Guaqui,,
+La Paz,Tito Yupanqui,,
+La Paz,Combaya,,
+La Paz,Coripata,,
+La Paz,Quiabaya,,
+La Paz,Aucapata,,
+La Paz,Ayo Ayo,,
+La Paz,Tipuani,,
+La Paz,Sorata,,
+La Paz,Chuma,,
+La Paz,Guanay,,
+La Paz,Teoponte,,
+La Paz,Mapiri,,
+La Paz,Charazani,,
+La Paz,Copacabana,,
+La Paz,Tacacoma,,
+La Paz,San Pedro de Tiquina,,
+La Paz,Curva,,
+La Paz,Pelechuco,,
+La Paz,Palos Blancos,,
+La Paz,Apolo,,
+La Paz,San Buenaventura,,
+La Paz,Ingavi,,
+La Paz,Santiago de Huata,,
+La Paz,Huarina,,
+La Paz,Humanata,,
+La Paz,Batallas,,
+La Paz,Ixiamas,,
+La Paz,Ayata,,
+La Paz,Waldo Ballivian,,
+La Paz,Puerto Acosta,,
+La Paz,Escoma,,
+La Paz,Charaña,,
+La Paz,Achacachi,,
+La Paz,Taraco,,
+La Paz,La (Marka) San Andrés de Machaca,,
+La Paz,Desaguadero,http://www.desaguadero.gob.bo/,Sitio web
+La Paz,Nuestra Señora de La Paz,http://gestionresiduos.lapaz.bo/,Sitio web
+La Paz,La Asunta,https://laasunta.gob.bo/,Sitio web
+La Paz,Puerto Pérez,http://www.gampp.bo/,Sitio web
+La Paz,Caranavi,http://caranavi.gob.bo/,Sitio web
+La Paz,Chua Cocani,http://www.chuacocani.gam.bo/,Sitio web
+La Paz,Cairoma,https://www.facebook.com/gamcairoma/,Página de Facebook
+La Paz,Colquiri,https://www.facebook.com/GAMCOLQUIRI/,Página de Facebook
+La Paz,Ichoca,https://www.facebook.com/Gobierno-Autonomo-Municipal-de-Ichoca-2021-2026-105416528206772/,Página de Facebook
+La Paz,Puerto Mayor de Carabuco,https://www.facebook.com/Gobierno-Autonomo-Municipal-Puerto-Mayor-Carabuco-409232549271391/,Página de Facebook
+La Paz,Cajuata,https://gamdecajuata.wixsite.com/website,Sitio web
+La Paz,Irupana,https://www.facebook.com/GAMIRUPANA/,Página de Facebook
+La Paz,Chulumani,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-de-Chulumani-1572381773062385/,Página de Facebook
+La Paz,Tiahuanacu,https://tiahuanacu.gob.bo/,Sitio web
+La Paz,Tiahuanacu,https://www.facebook.com/Gam-Tiahuanacu-110218921149169,Página de Facebook
+La Paz,Caquiaviri,https://www.facebook.com/gamcaquiaviri1/,Página de Facebook
+La Paz,Sicasica,https://sicasica.gob.bo/,Sitio web
+La Paz,Patacamaya,https://www.facebook.com/Gobierno-Autonomo-Municipal-de-Patacamaya-598880110623609/,Página de Facebook
+La Paz,Colquencha,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-de-Colquencha-100538948502600/,Página de Facebook
+La Paz,Viacha,http://www.viacha.gob.bo/,Sitio web
+La Paz,El Alto,http://www.elalto.gob.bo/,Sitio web
+La Paz,Pucarani,https://pucarani.gob.bo/,Sitio web
+La Paz,Coroico,https://coroico.bo/,Sitio web
+La Paz,Coroico,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-De-Coroico-106724514358889/,Página de Facebook
+La Paz,Coripata,https://www.facebook.com/alcaldiadecoripata/,Página de Facebook
+La Paz,Nuestra Señora de La Paz,https://www.lapaz.bo/,Sitio web
+La Paz,Nuestra Señora de La Paz,https://igob247.lapaz.bo/,Sitio web
+La Paz,Nuestra Señora de La Paz,https://www.concejomunicipal.bo/,Sitio web
+La Paz,Nuestra Señora de La Paz,https://amn.bo/,Sitio web
+La Paz,Nuestra Señora de La Paz,http://www.emavias.com.bo/,Sitio web
+La Paz,Nuestra Señora de La Paz,http://www.emaverde.com.bo/index.php/es/,Sitio web
+La Paz,Nuestra Señora de La Paz,http://www.lapazbus.bo/,Sitio web
+La Paz,Nuestra Señora de La Paz,http://www.miteleferico.bo/,Sitio web
+La Paz,Guanay,https://www.facebook.com/Gobierno-Autonomo-Municipal-de-Guanay-1663108053701167/,Página de Facebook
+La Paz,Huarina,https://www.facebook.com/gamhuarina/,Página de Facebook
+Nacional,Nacional,http://www.planificacion.gob.bo/index,Sitio web
+Nacional,Nacional,https://www.oopp.gob.bo/,Sitio web
+Nacional,Nacional,https://www.oopp.gob.bo/category/vivienda/,Sitio web
+Oruro,Esmeralda,,
+Oruro,Huanuni,,
+Oruro,Huachacalla,,
+Oruro,Huayllamarca,,
+Oruro,Poopó,,
+Oruro,Turco,,
+Oruro,Todos Santos,,
+Oruro,La Rivera,,
+Oruro,Carangas,,
+Oruro,Yunguyo del Litoral,,
+Oruro,Cruz de Machacamarca,,
+Oruro,Antequera,,
+Oruro,Belén de Andamarca,,
+Oruro,Corque,,
+Oruro,Paria,,
+Oruro,Eucaliptus,,
+Oruro,Caracollo,,
+Oruro,Curahuara de Carangas,,
+Oruro,Choquecota,,
+Oruro,Chipaya,,
+Oruro,Coipasa,,
+Oruro,Santuario de Quillacas,,
+Oruro,Andamarca,,
+Oruro,Machacamarca,,
+Oruro,El Choro,,
+Oruro,Pazña,,
+Oruro,Llica,,
+Oruro,Toledo,,
+Oruro,Santiago de Huari,,
+Oruro,Pampa Aullagas,,
+Oruro,Oruro,https://www.concejomunicipaloruro.com/,Sitio web
+Oruro,Huanuni,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-de-Huanuni-578127935689073/about/?ref=page_internal,Página de Facebook
+Oruro,Huachacalla,https://www.facebook.com/Gobierno-Autonomo-Municipal-Huachacalla-291643808116797/,Página de Facebook
+Oruro,Oruro,https://gamoruro.com/,Sitio web
+Oruro,Oruro,https://www.facebook.com/AlcaldiaDeOruro/,Página de Facebook
+Oruro,Huayllamarca,https://www.facebook.com/GAMHuayllamarca/,Página de Facebook
+Oruro,Sabaya,http://sabayabolivia.com/,Sitio web
+Oruro,Escara,http://www.escara.gob.bo/,Sitio web
+Oruro,Challapata,https://challapata.gob.bo/,Sitio web
+Oruro,Salinas de Garcí Mendoza,http://www.salinasdegarcimendoza.com/,Sitio web
+Pando,Sena,,
+Pando,Puerto Gonzalo Moreno,,
+Pando,Porvenir,,
+Pando,San Pedro,,
+Pando,Puerto Rico,,
+Pando,Santa Rosa,,
+Pando,Villa Nueva,,
+Pando,Santos Mercado,,
+Pando,Nueva Esperanza,,
+Pando,Bolpebra,,
+Pando,Filadelfia,,
+Pando,Cobija,https://www.cobija.gob.bo/,Sitio web
+Pando,Bella Flor,http://www.gambellaflor.gob.bo/,Sitio web
+Pando,varios,http://pando.gob.bo/,Sitio web
+Pando,Sena,https://www.facebook.com/SenaNaturalezaPura/,Página de Facebook
+Pando,Nueva Esperanza,https://www.facebook.com/Municipio-De-Nueva-Esperanza-1801261233294742/,Página de Facebook
+Potosí,Caripuyo,,
+Potosí,Sacaca,,
+Potosí,Acasio,,
+Potosí,Tinguipaya,,
+Potosí,Tomave,,
+Potosí,Porco,,
+Potosí,Yocalla,,
+Potosí,Urmiri,,
+Potosí,Betanzos,,
+Potosí,Colquechaca,,
+Potosí,San Antonio de Esmoruco,,
+Potosí,Mojinete,,
+Potosí,San Agustín,,
+Potosí,San Pablo,,
+Potosí,Vitiche,,
+Potosí,Arampampa,,
+Potosí,Chaquí,,
+Potosí,Ckochas,,
+Potosí,Ocurí,,
+Potosí,Chuquihuta Ayllu Jucumani,,
+Potosí,Chayanta,,
+Potosí,Atocha,,
+Potosí,San Pedro de Quemes,,
+Potosí,Tacobamba,,
+Potosí,Uncía,,
+Potosí,"Colcha ""K""",,
+Potosí,Tahua,,
+Potosí,Llallagua,http://gamllallagua.gob.bo/,Sitio web
+Potosí,Toro Toro,http://www.gamtorotoro.com.bo/,Sitio web
+Potosí,"Caiza ""D""",http://www.caizad.webnode.es/,Sitio web
+Potosí,Tupiza,http://www.tupiza.gob.bo/,Sitio web
+Potosí,Ravelo,http://www.gamravelo.com.bo/,Sitio web
+Potosí,Cotagaita,http://www.cotagaita.com.bo/,Sitio web
+Potosí,Llallagua,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-de-Llallagua-373895499790994,Página de Facebook
+Potosí,Tomave,https://www.facebook.com/gamtomave/,Página de Facebook
+Potosí,Porco,https://www.facebook.com/GAMPORCO/,Página de Facebook
+Potosí,Betanzos,https://www.facebook.com/GamBetanzos20/,Página de Facebook
+Potosí,Pocoata,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-de-Pocoata-722324394633908/,Página de Facebook
+Potosí,Toro Toro,https://www.facebook.com/www.visitatorotoro.com.bo/,Página de Facebook
+Potosí,"Caiza ""D""",https://www.facebook.com/www.municipalidadcaizad.webnode.es/,Página de Facebook
+Potosí,Chaquí,https://www.facebook.com/GobiernoAutonomoMunicipalDeChaqui/,Página de Facebook
+Potosí,Puna,https://puna.gob.bo/,Sitio web
+Potosí,Potosí,http://potosi.bo/,Sitio web
+Potosí,Uyuni,https://municipiouyuni.gob.bo/,Sitio web
+Potosí,Tupiza,https://www.facebook.com/GAMdeTupiza/,Página de Facebook
+Potosí,Ravelo,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-de-Ravelo-153863324774394/,Página de Facebook
+Potosí,Villazón,https://www.municipiovillazon.gob.bo/,Sitio web
+Potosí,"Colcha ""K""",https://www.facebook.com/gamcolchak/,Página de Facebook
+Santa Cruz,Puerto Quijarro,,
+Santa Cruz,Moromoro,,
+Santa Cruz,Samaipata,,
+Santa Cruz,San Juan,,
+Santa Cruz,San Pedro,,
+Santa Cruz,Saipina,,
+Santa Cruz,San Ignacio,,
+Santa Cruz,Concepción,,
+Santa Cruz,San Ramón,,
+Santa Cruz,Buena Vista,,
+Santa Cruz,San Carlos,,
+Santa Cruz,Portachuelo,,
+Santa Cruz,El Puente,,
+Santa Cruz,Lagunillas,,
+Santa Cruz,Pucará,,
+Santa Cruz,Boyuibe,,
+Santa Cruz,Cuevo,,
+Santa Cruz,Camiri,,
+Santa Cruz,Vallegrande,,
+Santa Cruz,Gutiérrez,,
+Santa Cruz,Postrervalle,,
+Santa Cruz,Trigal,,
+Santa Cruz,Quirusillas,,
+Santa Cruz,San Javier,,
+Santa Cruz,San Miguel,,
+Santa Cruz,Ascención de Guarayos,,
+Santa Cruz,Okinawa Uno,,
+Santa Cruz,General Saavedra,,
+Santa Cruz,Pailón,,
+Santa Cruz,Fernández Alonso,,
+Santa Cruz,Mineros,,
+Santa Cruz,Mairana,,
+Santa Cruz,Colpa Bélgica,,
+Santa Cruz,Puerto Suarez,,
+Santa Cruz,El Carmen Rivero Tórrez,,
+Santa Cruz,Roboré,,
+Santa Cruz,San Matías,,
+Santa Cruz,Charagua,,
+Santa Cruz,San José,,
+Santa Cruz,San Rafael,,
+Santa Cruz,San Ignacio,,
+Santa Cruz,Urubicha,,
+Santa Cruz,El Puente,,
+Santa Cruz,Comarapa,,
+Santa Cruz,Porongo,https://gamporongo.gob.bo/,Sitio web
+Santa Cruz,Cabezas,http://www.cabezas.gob.bo/,Sitio web
+Santa Cruz,Cotoca,https://www.cotoca.gob.bo/,Sitio web
+Santa Cruz,Warnes,http://warnes.gob.bo/,Sitio web
+Santa Cruz,Pampa Grande,http://www.municipiopmgde/,Sitio web
+Santa Cruz,Puerto Quijarro,https://www.facebook.com/www.puertoquijarro.2015/,Página de Facebook
+Santa Cruz,La Guardia,http://www.laguardia.gob.bo/laguardia/,Sitio web
+Santa Cruz,La Guardia,https://www.facebook.com/GobiernoMunicipalLaGuardia/,Página de Facebook
+Santa Cruz,Moromoro,https://www.facebook.com/Gobierno-Autonomo-Municipal-de-Moromoro-137290086911464/,Página de Facebook
+Santa Cruz,El Torno,https://www.eltorno.gob.bo/,Sitio web
+Santa Cruz,Samaipata,https://www.facebook.com/gamsamaipata/,Página de Facebook
+Santa Cruz,San Pedro,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-de-San-Pedro-102384515360502/,Página de Facebook
+Santa Cruz,Porongo,https://www.facebook.com/municipioporongo/,Página de Facebook
+Santa Cruz,Santa Cruz de la Sierra,https://www.gmsantacruz.gob.bo/,Sitio web
+Santa Cruz,Santa Cruz de la Sierra,http://concejomunicipalscz.gob.bo/,Sitio web
+Santa Cruz,San Pedro,https://www.facebook.com/Gobierno-Autonomo-Municipal-SAN-PEDRO-305639162922244/,Página de Facebook
+Santa Cruz,San Carlos,https://www.facebook.com/gamsancarlos/,Página de Facebook
+Santa Cruz,El Puente,https://www.facebook.com/elpuentegob/,Página de Facebook
+Santa Cruz,Boyuibe,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-De-Boyuibe-213419205858322/,Página de Facebook
+Santa Cruz,Yapacaní,https://yapacani.gob.bo/,Sitio web
+Santa Cruz,Yapacaní,https://www.facebook.com/yapacaniproductiva/,Página de Facebook
+Santa Cruz,Cuatro Cañadas,https://www.gamcuatrocanadas.gob.bo/,Sitio web
+Santa Cruz,Montero,http://municipiomontero.gob.bo/,Sitio web
+Santa Cruz,Ascención de Guarayos,https://www.facebook.com/GobiernoAutonomoMunicipalDeAscensionDeGuarayos/,Página de Facebook
+Santa Cruz,Mairana,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-de-Mairana-823654724465960/,Página de Facebook
+Santa Cruz,Colpa Bélgica,https://www.facebook.com/gobiernoautonomomunicipaldecolpabelgica/,Página de Facebook
+Santa Cruz,El Carmen Rivero Tórrez,https://www.facebook.com/gamecrt/,Página de Facebook
+Santa Cruz,San Rafael,https://www.facebook.com/Gobierno-Aut%C3%B3nomo-Municipal-de-San-Rafael-de-Velasco-1892812380978724/,Página de Facebook
+Santa Cruz,San Antonio de Lomerio,https://www.facebook.com/sanantoniodelomerio/,Página de Facebook
+Santa Cruz,San Julián,https://sanjulian.gob.bo/,Sitio web
+Santa Cruz,San Julián,https://www.facebook.com/gobiernomunicipalsanjulian/,Página de Facebook
+Santa Cruz,Comarapa,https://facebook.com/GAMComarapa/,Página de Facebook
+Tarija,Villa Montes,,
+Tarija,San Lorenzo,,
+Tarija,San Lorenzo,,
+Tarija,Padcaya,,
+Tarija,Uriondo,http://www.uriondo.bo/,Sitio web
+Tarija,Yacuiba,http://www.gamy.gob.bo/,Sitio web
+Tarija,Bermejo,https://www.gmbermejo.gob.bo/cgi-sys/suspendedpage.cgi,Sitio web
+Tarija,Villa Montes,https://www.facebook.com/garvillamontes/,Página de Facebook
+Tarija,Uriondo,https://www.facebook.com/Gobierno.Autonomo.Municipal.Uriondo/,Página de Facebook
+Tarija,Yacuiba,https://www.facebook.com/Yacuiba.gob,Página de Facebook
+Tarija,Yunchará,https://www.facebook.com/alcaldiaYunchara/,Página de Facebook
+Tarija,Caraparí,https://municipiocarapari.gob.bo/,Sitio web
+Tarija,San Lorenzo,https://www.facebook.com/Gobierno.Autonomo.Municipal.San.Lorenzo/,Página de Facebook
+Tarija,Tarija,https://inicio.tarija.bo/,Sitio web
+Tarija,Tarija,https://escuelamusicaregional.tarija.bo/,Sitio web
+Tarija,Tarija,http://catastro-tarija.bo/mapas,Sitio web
+Tarija,San Lorenzo,https://www.facebook.com/Gobierno.Autonomo.Municipal.San.Lorenzo/,Página de Facebook
