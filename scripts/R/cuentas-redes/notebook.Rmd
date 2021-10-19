@@ -1,0 +1,66 @@
+---
+title: "Cuentas de redes sociales de autoridades"
+subtitle: "Elecciones Generales 2021 y Elecciones Sunbacionales 2021"
+author: "Lab TecnoSocial"
+output: 
+  html_notebook:
+      toc: true
+---
+
+
+```{r}
+library(tidyverse)
+library(googlesheets4)
+library(rtweet)
+library(jsonlite)
+library(rlist)
+```
+
+# Distribución horizontal
+
+## Órgano legislativo
+
+```{r}
+sheet_id <- "12rPbzdVkrnXUvfkIDbGS1kftRCum6CMyH6_ZZUxibHM"
+ss <- read_sheet(sheet_id)
+glimpse(ss)
+```
+
+```{r}
+combina_nombres <- ss %>%
+  select(`Nombre Completo`) %>%
+  mutate(np = str_count(`Nombre Completo`, pattern = "\\S+") ) %>%
+  separate(`Nombre Completo`, into = c("p1", "p2", "p3", "p4", "p5", "p"), sep = " ", remove = F)
+glimpse(combina_nombres)
+```
+
+```{r}
+users <- combina_nombres$`Nombre Completo` %>%
+  map( ~ search_users(q = .x,
+                      n = 5,
+                      parse = F)) %>%
+
+write_json(users, "users_twitter.json")
+users <- fromJSON("users_twitter.json") %>>% list.ungroup()
+
+screen_names <- map(users, ~ {.x[["screen_name"]]}) %>% tibble()
+
+ss <- bind_cols(ss, screen_names) 
+ss <- rename(ss, screen_name = .)
+ss <- mutate(ss, screen_name = as.character(screen_name))
+
+write_sheet(ss, sheet_id, sheet = "con_twitter")
+```
+
+
+## Órgano ejecutivo
+
+## Órgano judicial
+
+## Órgano electoral
+
+# Distribución vertical
+
+## Gobiernos departamentales
+
+## Gobiernos municipales
