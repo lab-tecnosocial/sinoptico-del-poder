@@ -5,6 +5,7 @@ author: "Lab TecnoSocial"
 output: 
   html_notebook:
       toc: true
+      toc_float: true
 ---
 
 
@@ -14,11 +15,14 @@ library(googlesheets4)
 library(rtweet)
 library(jsonlite)
 library(rlist)
+library(pipeR)
 ```
 
 # Distribución horizontal
 
 ## Órgano legislativo
+
+Obtener el Google Sheet:
 
 ```{r}
 sheet_id <- "12rPbzdVkrnXUvfkIDbGS1kftRCum6CMyH6_ZZUxibHM"
@@ -26,13 +30,16 @@ ss <- read_sheet(sheet_id)
 glimpse(ss)
 ```
 
+Combinar nombres para búsqueda: 
 ```{r}
 combina_nombres <- ss %>%
   select(`Nombre Completo`) %>%
   mutate(np = str_count(`Nombre Completo`, pattern = "\\S+") ) %>%
-  separate(`Nombre Completo`, into = c("p1", "p2", "p3", "p4", "p5", "p"), sep = " ", remove = F)
+  separate(`Nombre Completo`, into = c("p1", "p2", "p3", "p4", "p5", "p6"), sep = " ", remove = F)
 glimpse(combina_nombres)
 ```
+
+Obtener usuarios de API de Twitter:
 
 ```{r}
 users <- combina_nombres$`Nombre Completo` %>%
@@ -41,17 +48,23 @@ users <- combina_nombres$`Nombre Completo` %>%
                       parse = F)) %>%
 
 write_json(users, "users_twitter.json")
+
+```
+
+Combinar datos previos con los usuarios encontrados y subir a Google Sheets:
+```{r}
 users <- fromJSON("users_twitter.json") %>>% list.ungroup()
 
 screen_names <- map(users, ~ {.x[["screen_name"]]}) %>% tibble()
 
 ss <- bind_cols(ss, screen_names) 
 ss <- rename(ss, screen_name = .)
-ss <- mutate(ss, screen_name = as.character(screen_name))
+ss2 <- ss %>% unnest(screen_name, keep_empty = T)
+ss2 <- ss2 %>% mutate(url = str_c("https://twitter.com/", screen_name))
 
-write_sheet(ss, sheet_id, sheet = "con_twitter")
+write_sheet(ss2, sheet_id, sheet = "con_twitter")
 ```
-
+ 
 
 ## Órgano ejecutivo
 
