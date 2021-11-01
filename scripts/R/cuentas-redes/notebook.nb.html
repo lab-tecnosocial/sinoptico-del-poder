@@ -306,84 +306,54 @@ library(pipeR)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<div id="distribución-horizontal" class="section level1">
-<h1>Distribución horizontal</h1>
-<div id="órgano-legislativo" class="section level2">
-<h2>Órgano legislativo</h2>
 <p>Obtener el Google Sheet:</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2hlZXRfaWQgPC0gXCIxMnJQYnpkVmtyblhVdmZrSURiR1Mxa2Z0UkN1bTZDTXlINl9aWlV4aWJITVwiXG5zcyA8LSByZWFkX3NoZWV0KHNoZWV0X2lkKVxuYGBgIn0= -->
-<pre class="r"><code>sheet_id &lt;- &quot;12rPbzdVkrnXUvfkIDbGS1kftRCum6CMyH6_ZZUxibHM&quot;
-ss &lt;- read_sheet(sheet_id)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2hlZXRfaWQgPC0gXCIxamhMTm1LdUdOVkVla25lcDI2VEZuTXNfT2VVakFiOHAyc0cxWXoyNmRfRVwiXG5zcyA8LSByZWFkX3NoZWV0KHNoZWV0X2lkKVxuZ2xpbXBzZShzcylcbmBgYCJ9 -->
+<pre class="r"><code>sheet_id &lt;- &quot;1jhLNmKuGNVEeknep26TFnMs_OeUjAb8p2sG1Yz26d_E&quot;
+ss &lt;- read_sheet(sheet_id)
+glimpse(ss)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoi4pyTIFJlYWRpbmcgZnJvbSBSZXN1bHRhZG9zIGVsZWNjaW9uZXMgZ2VuZXJhbGVzIDIwMjAuXG7inJMgUmFuZ2UgSG9qYSAxLlxuIn0= -->
-<pre><code>✓ Reading from Resultados elecciones generales 2020.
-✓ Range Hoja 1.</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZ2xpbXBzZShzcylcbmBgYCJ9 -->
-<pre class="r"><code>glimpse(ss)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUm93czogMzQ5XG5Db2x1bW5zOiA4XG4kIGBTaWdsYSBQb2zDrXRpY2FgICA8Y2hyPiBcIkNDXCIsIFwiQ0NcIiwgXCJDQ1wiLCBcIkNDXCIsIFwiTUFTLUlQU+KAplxuJCBgTm9tYnJlIENvbXBsZXRvYCA8Y2hyPiBcIlNpbHZpYSBHaWxtYSBTYWxhbWUgRmFyamF0XCIsIFwiSuKAplxuJCBQb3NpY2nDs24gICAgICAgICAgPGRibD4gMSwgMSwgMiwgMiwgMSwgMSwgMiwgMiwgMSwgMSwgMSzigKZcbiQgR8OpbmVybyAgICAgICAgICAgIDxjaHI+IFwiRmVtZW5pbm9cIiwgXCJNYXNjdWxpbm9cIiwgXCJNYXNjdWzigKZcbiQgYFRpdC9TdXBgICAgICAgICAgPGNocj4gXCJUaXR1bGFyXCIsIFwiU3VwbGVudGVcIiwgXCJUaXR1bGFyXCLigKZcbiQgQ2lyY3Vucy4gICAgICAgICAgPGNocj4gTkEsIE5BLCBOQSwgTkEsIE5BLCBOQSwgTkEsIE5BLCDigKZcbiQgRGVwYXJ0YW1lbnRvICAgICAgPGNocj4gXCJDaHVxdWlzYWNhXCIsIFwiQ2h1cXVpc2FjYVwiLCBcIkNodeKAplxuJCBUaXBvICAgICAgICAgICAgICA8Y2hyPiBcIlNlbmFkb3JcIiwgXCJTZW5hZG9yXCIsIFwiU2VuYWRvclwiLOKAplxuIn0= -->
-<pre><code>Rows: 349
-Columns: 8
-$ `Sigla Política`  &lt;chr&gt; &quot;CC&quot;, &quot;CC&quot;, &quot;CC&quot;, &quot;CC&quot;, &quot;MAS-IPS…
-$ `Nombre Completo` &lt;chr&gt; &quot;Silvia Gilma Salame Farjat&quot;, &quot;J…
-$ Posición          &lt;dbl&gt; 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 1,…
-$ Género            &lt;chr&gt; &quot;Femenino&quot;, &quot;Masculino&quot;, &quot;Mascul…
-$ `Tit/Sup`         &lt;chr&gt; &quot;Titular&quot;, &quot;Suplente&quot;, &quot;Titular&quot;…
-$ Circuns.          &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, …
-$ Departamento      &lt;chr&gt; &quot;Chuquisaca&quot;, &quot;Chuquisaca&quot;, &quot;Chu…
-$ Tipo              &lt;chr&gt; &quot;Senador&quot;, &quot;Senador&quot;, &quot;Senador&quot;,…</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Combinar nombres para búsqueda:</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY29tYmluYV9ub21icmVzIDwtIHNzICU+JVxuICBzZWxlY3QoYE5vbWJyZSBDb21wbGV0b2ApICU+JVxuICBtdXRhdGUobnAgPSBzdHJfY291bnQoYE5vbWJyZSBDb21wbGV0b2AsIHBhdHRlcm4gPSBcIlxcXFxTK1wiKSApICU+JVxuICBzZXBhcmF0ZShgTm9tYnJlIENvbXBsZXRvYCwgaW50byA9IGMoXCJwMVwiLCBcInAyXCIsIFwicDNcIiwgXCJwNFwiLCBcInA1XCIsIFwicFwiKSwgc2VwID0gXCIgXCIsIHJlbW92ZSA9IEYpXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY29tYmluYV9ub21icmVzIDwtIHNzICU+JVxuICBzZWxlY3QoYE5vbWJyZSBDb21wbGV0b2ApICU+JVxuICBtdXRhdGUobnAgPSBzdHJfY291bnQoYE5vbWJyZSBDb21wbGV0b2AsIHBhdHRlcm4gPSBcIlxcXFxTK1wiKSApICU+JVxuICBzZXBhcmF0ZShgTm9tYnJlIENvbXBsZXRvYCwgaW50byA9IGMoXCJwMVwiLCBcInAyXCIsIFwicDNcIiwgXCJwNFwiLCBcInA1XCIsIFwicDZcIiksIHNlcCA9IFwiIFwiLCByZW1vdmUgPSBGKVxuZ2xpbXBzZShjb21iaW5hX25vbWJyZXMpXG5gYGAifQ== -->
 <pre class="r"><code>combina_nombres &lt;- ss %&gt;%
   select(`Nombre Completo`) %&gt;%
   mutate(np = str_count(`Nombre Completo`, pattern = &quot;\\S+&quot;) ) %&gt;%
-  separate(`Nombre Completo`, into = c(&quot;p1&quot;, &quot;p2&quot;, &quot;p3&quot;, &quot;p4&quot;, &quot;p5&quot;, &quot;p&quot;), sep = &quot; &quot;, remove = F)</code></pre>
+  separate(`Nombre Completo`, into = c(&quot;p1&quot;, &quot;p2&quot;, &quot;p3&quot;, &quot;p4&quot;, &quot;p5&quot;, &quot;p6&quot;), sep = &quot; &quot;, remove = F)
+glimpse(combina_nombres)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiV2FybmluZzogRXhwZWN0ZWQgNiBwaWVjZXMuIE1pc3NpbmcgcGllY2VzIGZpbGxlZCB3aXRoIGBOQWAgaW4gMzQ4IHJvd3MgWzEsIDIsIDMsIDQsIDUsIDYsIDcsIDgsIDksIDEwLCAxMSwgMTIsIDEzLCAxNCwgMTUsIDE2LCAxNywgMTgsIDE5LCAyMCwgLi4uXS5cbiJ9 -->
-<pre><code>Warning: Expected 6 pieces. Missing pieces filled with `NA` in 348 rows [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, ...].</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZ2xpbXBzZShjb21iaW5hX25vbWJyZXMpXG5gYGAifQ== -->
-<pre class="r"><code>glimpse(combina_nombres)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUm93czogMzQ5XG5Db2x1bW5zOiA4XG4kIGBOb21icmUgQ29tcGxldG9gIDxjaHI+IFwiU2lsdmlhIEdpbG1hIFNhbGFtZSBGYXJqYXRcIiwgXCJK4oCmXG4kIHAxICAgICAgICAgICAgICAgIDxjaHI+IFwiU2lsdmlhXCIsIFwiSm9yZ2VcIiwgXCJTYW50aWFnb1wiLCBcIuKAplxuJCBwMiAgICAgICAgICAgICAgICA8Y2hyPiBcIkdpbG1hXCIsIFwiQW50b25pb1wiLCBcIlRpY29uYVwiLCBcIkLigKZcbiQgcDMgICAgICAgICAgICAgICAgPGNocj4gXCJTYWxhbWVcIiwgXCJaYW1vcmFcIiwgXCJZdXBhcmlcIiwgXCJS4oCmXG4kIHA0ICAgICAgICAgICAgICAgIDxjaHI+IFwiRmFyamF0XCIsIFwiVGFyZGlvXCIsIE5BLCBcIkxhXCIsIE5B4oCmXG4kIHA1ICAgICAgICAgICAgICAgIDxjaHI+IE5BLCBOQSwgTkEsIFwiTWFkcmlkXCIsIE5BLCBOQSwgTkHigKZcbiQgcCAgICAgICAgICAgICAgICAgPGNocj4gTkEsIE5BLCBOQSwgTkEsIE5BLCBOQSwgTkEsIE5BLCDigKZcbiQgbnAgICAgICAgICAgICAgICAgPGludD4gNCwgNCwgMywgNSwgMywgNCwgMywgMywgNCwgNCwgMyzigKZcbiJ9 -->
-<pre><code>Rows: 349
-Columns: 8
-$ `Nombre Completo` &lt;chr&gt; &quot;Silvia Gilma Salame Farjat&quot;, &quot;J…
-$ p1                &lt;chr&gt; &quot;Silvia&quot;, &quot;Jorge&quot;, &quot;Santiago&quot;, &quot;…
-$ p2                &lt;chr&gt; &quot;Gilma&quot;, &quot;Antonio&quot;, &quot;Ticona&quot;, &quot;B…
-$ p3                &lt;chr&gt; &quot;Salame&quot;, &quot;Zamora&quot;, &quot;Yupari&quot;, &quot;R…
-$ p4                &lt;chr&gt; &quot;Farjat&quot;, &quot;Tardio&quot;, NA, &quot;La&quot;, NA…
-$ p5                &lt;chr&gt; NA, NA, NA, &quot;Madrid&quot;, NA, NA, NA…
-$ p                 &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, …
-$ np                &lt;int&gt; 4, 4, 3, 5, 3, 4, 3, 3, 4, 4, 3,…</code></pre>
-<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<div id="distribución-horizontal" class="section level1">
+<h1>Distribución horizontal</h1>
+<div id="órgano-legislativo" class="section level2">
+<h2>Órgano legislativo</h2>
+<p>Filtrar:</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Obtener usuarios de API de Twitter:</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxud3JpdGVfc2hlZXQoc3MyLCBzaGVldF9pZCwgc2hlZXQgPSBcImNvbl90d2l0dGVyXCIpXG5cbmBgYCJ9 -->
-<pre class="r"><code>write_sheet(ss2, sheet_id, sheet = &quot;con_twitter&quot;)
-</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudXNlcnMgPC0gc3NfbGVnaXNsYXRpdm8kbm9tYnJlICU+JVxuICBtYXAoIH4gc2VhcmNoX3VzZXJzKHEgPSAueCxcbiAgICAgICAgICAgICAgICAgICAgICBuID0gNSxcbiAgICAgICAgICAgICAgICAgICAgICBwYXJzZSA9IEYpKVxuXG53cml0ZV9qc29uKHVzZXJzLCBcInVzZXJzX3R3aXR0ZXJfbGVnaXNsYXRpdm8uanNvblwiKVxuYGBgIn0= -->
+<pre class="r"><code>users &lt;- ss_legislativo$nombre %&gt;%
+  map( ~ search_users(q = .x,
+                      n = 5,
+                      parse = F))
+
+write_json(users, &quot;users_twitter_legislativo.json&quot;)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoi4pyTIFdyaXRpbmcgdG8gUmVzdWx0YWRvcyBlbGVjY2lvbmVzIGdlbmVyYWxlcyAyMDIwLlxu4pyTIFdyaXRpbmcgdG8gc2hlZXQgY29uX3R3aXR0ZXIuXG4ifQ== -->
-<pre><code>✓ Writing to Resultados elecciones generales 2020.
-✓ Writing to sheet con_twitter.</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Combinar datos previos con los usuarios encontrados y subir a Google Sheets:</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudXNlcnMgPC0gZnJvbUpTT04oXCJ1c2Vyc190d2l0dGVyLmpzb25cIikgJT4+JSBsaXN0LnVuZ3JvdXAoKVxuXG5zY3JlZW5fbmFtZXMgPC0gbWFwKHVzZXJzLCB+IHsueFtbXCJzY3JlZW5fbmFtZVwiXV19KSAlPiUgdGliYmxlKClcblxuc3MgPC0gYmluZF9jb2xzKHNzLCBzY3JlZW5fbmFtZXMpIFxuc3MgPC0gcmVuYW1lKHNzLCBzY3JlZW5fbmFtZSA9IC4pXG5zczIgPC0gc3MgJT4lIHVubmVzdChzY3JlZW5fbmFtZSwga2VlcF9lbXB0eSA9IFQpXG5zczIgPC0gc3MyICU+JSBtdXRhdGUodXJsID0gc3RyX2MoXCJodHRwczovL3R3aXR0ZXIuY29tL1wiLCBzY3JlZW5fbmFtZSkpXG5cbndyaXRlX3NoZWV0KHNzMiwgc2hlZXRfaWQsIHNoZWV0ID0gXCJjb25fdHdpdHRlclwiKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudXNlcnMgPC0gZnJvbUpTT04oXCJ1c2Vyc190d2l0dGVyLmpzb25cIikgJT4+JSBsaXN0LnVuZ3JvdXAoKVxuXG5zY3JlZW5fbmFtZXMgPC0gbWFwKHVzZXJzLCB+IHsueFtbXCJzY3JlZW5fbmFtZVwiXV19KSAlPiUgdGliYmxlKClcblxuc3MgPC0gYmluZF9jb2xzKHNzLCBzY3JlZW5fbmFtZXMpIFxuc3MgPC0gcmVuYW1lKHNzLCBzY3JlZW5fbmFtZSA9IC4pXG5zczIgPC0gc3MgJT4lIHVubmVzdChzY3JlZW5fbmFtZSwga2VlcF9lbXB0eSA9IFQpXG5zczIgPC0gc3MyICU+JSBtdXRhdGUodHdpdHRlcl91cmwgPSBzdHJfYyhcImh0dHBzOi8vdHdpdHRlci5jb20vXCIsIHNjcmVlbl9uYW1lKSlcblxud3JpdGVfc2hlZXQoc3MyLCBzaGVldF9pZCwgc2hlZXQgPSBcImNvbl90d2l0dGVyXCIpXG5gYGAifQ== -->
 <pre class="r"><code>users &lt;- fromJSON(&quot;users_twitter.json&quot;) %&gt;&gt;% list.ungroup()
 
 screen_names &lt;- map(users, ~ {.x[[&quot;screen_name&quot;]]}) %&gt;% tibble()
@@ -391,7 +361,7 @@ screen_names &lt;- map(users, ~ {.x[[&quot;screen_name&quot;]]}) %&gt;% tibble()
 ss &lt;- bind_cols(ss, screen_names) 
 ss &lt;- rename(ss, screen_name = .)
 ss2 &lt;- ss %&gt;% unnest(screen_name, keep_empty = T)
-ss2 &lt;- ss2 %&gt;% mutate(url = str_c(&quot;https://twitter.com/&quot;, screen_name))
+ss2 &lt;- ss2 %&gt;% mutate(twitter_url = str_c(&quot;https://twitter.com/&quot;, screen_name))
 
 write_sheet(ss2, sheet_id, sheet = &quot;con_twitter&quot;)</code></pre>
 <!-- rnb-source-end -->
@@ -410,16 +380,70 @@ write_sheet(ss2, sheet_id, sheet = &quot;con_twitter&quot;)</code></pre>
 </div>
 <div id="distribución-vertical" class="section level1">
 <h1>Distribución vertical</h1>
-<div id="gobiernos-departamentales" class="section level2">
-<h2>Gobiernos departamentales</h2>
+<div id="gobiernos-departamentales-del-eje-troncal" class="section level2">
+<h2>Gobiernos departamentales del eje troncal</h2>
+<p>Filtrar:</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3NfZGVwYXJ0YW1lbnRhbCA8LSBzcyAlPiVcbiAgZmlsdGVyKHRpcG9fY2FyZ28gJWluJSBjKFwiQXNhbWJsZcOtc3RhcyBEZXBhcnRhbWVudGFsZXMgUG9yIFRlcnJpdG9yaW9cIiwgXCJBc2FtYmxlw61zdGFzIERlcGFydGFtZW50YWxlcyBQb3IgUG9ibGFjacOzblwiLCBcIkdvYmVybmFkb3JcIiwgXCJWaWNlZ29iZXJuYWRvclwiKSkgJT4lXG4gIGRyb3BfbmEobm9tYnJlKVxuXG5nbGltcHNlKHNzX2RlcGFydGFtZW50YWwpIFxuYGBgIn0= -->
+<pre class="r"><code>ss_departamental &lt;- ss %&gt;%
+  filter(tipo_cargo %in% c(&quot;Asambleístas Departamentales Por Territorio&quot;, &quot;Asambleístas Departamentales Por Población&quot;, &quot;Gobernador&quot;, &quot;Vicegobernador&quot;)) %&gt;%
+  drop_na(nombre)
+
+glimpse(ss_departamental) </code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Obtener usuarios de API de Twitter:</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudXNlcnNfZGVwYXJ0YW1lbnRhbCA8LSBzc19kZXBhcnRhbWVudGFsJG5vbWJyZSAlPiVcbiAgbmEub21pdCgpICU+JVxuICBtYXAoIH4gc2VhcmNoX3VzZXJzKHEgPSAueCxcbiAgICAgICAgICAgICAgICAgICAgICBuID0gNSxcbiAgICAgICAgICAgICAgICAgICAgICBwYXJzZSA9IEYpKVxuXG53cml0ZV9qc29uKHVzZXJzX2RlcGFydGFtZW50YWwsIFwidXNlcnNfdHdpdHRlcl9kZXBhcnRhbWVudGFsLmpzb25cIilcbmBgYCJ9 -->
+<pre class="r"><code>users_departamental &lt;- ss_departamental$nombre %&gt;%
+  na.omit() %&gt;%
+  map( ~ search_users(q = .x,
+                      n = 5,
+                      parse = F))
+
+write_json(users_departamental, &quot;users_twitter_departamental.json&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 </div>
-<div id="gobiernos-municipales" class="section level2">
-<h2>Gobiernos municipales</h2>
+<div id="gobiernos-municipales-del-eje-troncal" class="section level2">
+<h2>Gobiernos municipales del eje troncal</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3NfbXVuaWNpcGFsIDwtIHNzICU+JVxuICBmaWx0ZXIodGlwb19jYXJnbyAlaW4lIGMoXCJDb25jZWphbFwiLCBcIkFsY2FsZGVcIikpKSAlPiVcblxuYGBgIn0= -->
+<pre class="r"><code>ss_municipal &lt;- ss %&gt;%
+  filter(tipo_cargo %in% c(&quot;Concejal&quot;, &quot;Alcalde&quot;))) %&gt;%
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3I6IHVuZXhwZWN0ZWQgJyknIGluOlxuXCJzc19tdW5pY2lwYWwgPC0gc3MgJT4lXG4gIGZpbHRlcih0aXBvX2NhcmdvICVpbiUgYyhcIkNvbmNlamFsXCIsIFwiQWxjYWxkZVwiKSkpXCJcbiJ9 -->
+<pre><code>Error: unexpected &#39;)&#39; in:
+&quot;ss_municipal &lt;- ss %&gt;%
+  filter(tipo_cargo %in% c(&quot;Concejal&quot;, &quot;Alcalde&quot;)))&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Obtener usuarios de API de Twitter:</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudXNlcnNfZGVwYXJ0YW1lbnRhbCA8LSBzc19kZXBhcnRhbWVudGFsJG5vbWJyZSAlPiVcbiAgbmEub21pdCgpICU+JVxuICBtYXAoIH4gc2VhcmNoX3VzZXJzKHEgPSAueCxcbiAgICAgICAgICAgICAgICAgICAgICBuID0gNSxcbiAgICAgICAgICAgICAgICAgICAgICBwYXJzZSA9IEYpKVxuXG53cml0ZV9qc29uKHVzZXJzX2RlcGFydGFtZW50YWwsIFwidXNlcnNfdHdpdHRlcl9kZXBhcnRhbWVudGFsLmpzb25cIilcbmBgYCJ9 -->
+<pre class="r"><code>users_departamental &lt;- ss_departamental$nombre %&gt;%
+  na.omit() %&gt;%
+  map( ~ search_users(q = .x,
+                      n = 5,
+                      parse = F))
+
+write_json(users_departamental, &quot;users_twitter_departamental.json&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 </div>
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiQ3VlbnRhcyBkZSByZWRlcyBzb2NpYWxlcyBkZSBhdXRvcmlkYWRlcyIKc3VidGl0bGU6ICJFbGVjY2lvbmVzIEdlbmVyYWxlcyAyMDIxIHkgRWxlY2Npb25lcyBTdW5iYWNpb25hbGVzIDIwMjEiCmF1dGhvcjogIkxhYiBUZWNub1NvY2lhbCIKb3V0cHV0OiAKICBodG1sX25vdGVib29rOgogICAgICB0b2M6IHRydWUKICAgICAgdG9jX2Zsb2F0OiB0cnVlCi0tLQoKCmBgYHtyfQpsaWJyYXJ5KHRpZHl2ZXJzZSkKbGlicmFyeShnb29nbGVzaGVldHM0KQpsaWJyYXJ5KHJ0d2VldCkKbGlicmFyeShqc29ubGl0ZSkKbGlicmFyeShybGlzdCkKbGlicmFyeShwaXBlUikKYGBgCgojIERpc3RyaWJ1Y2nDs24gaG9yaXpvbnRhbAoKIyMgw5NyZ2FubyBsZWdpc2xhdGl2bwoKT2J0ZW5lciBlbCBHb29nbGUgU2hlZXQ6CgpgYGB7cn0Kc2hlZXRfaWQgPC0gIjEyclBiemRWa3JuWFV2ZmtJRGJHUzFrZnRSQ3VtNkNNeUg2X1paVXhpYkhNIgpzcyA8LSByZWFkX3NoZWV0KHNoZWV0X2lkKQpnbGltcHNlKHNzKQpgYGAKCkNvbWJpbmFyIG5vbWJyZXMgcGFyYSBiw7pzcXVlZGE6IApgYGB7cn0KY29tYmluYV9ub21icmVzIDwtIHNzICU+JQogIHNlbGVjdChgTm9tYnJlIENvbXBsZXRvYCkgJT4lCiAgbXV0YXRlKG5wID0gc3RyX2NvdW50KGBOb21icmUgQ29tcGxldG9gLCBwYXR0ZXJuID0gIlxcUysiKSApICU+JQogIHNlcGFyYXRlKGBOb21icmUgQ29tcGxldG9gLCBpbnRvID0gYygicDEiLCAicDIiLCAicDMiLCAicDQiLCAicDUiLCAicDYiKSwgc2VwID0gIiAiLCByZW1vdmUgPSBGKQpnbGltcHNlKGNvbWJpbmFfbm9tYnJlcykKYGBgCgpPYnRlbmVyIHVzdWFyaW9zIGRlIEFQSSBkZSBUd2l0dGVyOgoKYGBge3J9CnVzZXJzIDwtIGNvbWJpbmFfbm9tYnJlcyRgTm9tYnJlIENvbXBsZXRvYCAlPiUKICBtYXAoIH4gc2VhcmNoX3VzZXJzKHEgPSAueCwKICAgICAgICAgICAgICAgICAgICAgIG4gPSA1LAogICAgICAgICAgICAgICAgICAgICAgcGFyc2UgPSBGKSkgJT4lCgp3cml0ZV9qc29uKHVzZXJzLCAidXNlcnNfdHdpdHRlci5qc29uIikKCmBgYAoKQ29tYmluYXIgZGF0b3MgcHJldmlvcyBjb24gbG9zIHVzdWFyaW9zIGVuY29udHJhZG9zIHkgc3ViaXIgYSBHb29nbGUgU2hlZXRzOgpgYGB7cn0KdXNlcnMgPC0gZnJvbUpTT04oInVzZXJzX3R3aXR0ZXIuanNvbiIpICU+PiUgbGlzdC51bmdyb3VwKCkKCnNjcmVlbl9uYW1lcyA8LSBtYXAodXNlcnMsIH4gey54W1sic2NyZWVuX25hbWUiXV19KSAlPiUgdGliYmxlKCkKCnNzIDwtIGJpbmRfY29scyhzcywgc2NyZWVuX25hbWVzKSAKc3MgPC0gcmVuYW1lKHNzLCBzY3JlZW5fbmFtZSA9IC4pCnNzMiA8LSBzcyAlPiUgdW5uZXN0KHNjcmVlbl9uYW1lLCBrZWVwX2VtcHR5ID0gVCkKc3MyIDwtIHNzMiAlPiUgbXV0YXRlKHVybCA9IHN0cl9jKCJodHRwczovL3R3aXR0ZXIuY29tLyIsIHNjcmVlbl9uYW1lKSkKCndyaXRlX3NoZWV0KHNzMiwgc2hlZXRfaWQsIHNoZWV0ID0gImNvbl90d2l0dGVyIikKYGBgCiAKCiMjIMOTcmdhbm8gZWplY3V0aXZvCgojIyDDk3JnYW5vIGp1ZGljaWFsCgojIyDDk3JnYW5vIGVsZWN0b3JhbAoKIyBEaXN0cmlidWNpw7NuIHZlcnRpY2FsCgojIyBHb2JpZXJub3MgZGVwYXJ0YW1lbnRhbGVzCgojIyBHb2JpZXJub3MgbXVuaWNpcGFsZXMK</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiQ3VlbnRhcyBkZSByZWRlcyBzb2NpYWxlcyBkZSBhdXRvcmlkYWRlcyIKc3VidGl0bGU6ICJFbGVjY2lvbmVzIEdlbmVyYWxlcyAyMDIxIHkgRWxlY2Npb25lcyBTdW5iYWNpb25hbGVzIDIwMjEiCmF1dGhvcjogIkxhYiBUZWNub1NvY2lhbCIKb3V0cHV0OiAKICBodG1sX25vdGVib29rOgogICAgICB0b2M6IHRydWUKICAgICAgdG9jX2Zsb2F0OiB0cnVlCi0tLQoKYGBge3J9CmxpYnJhcnkodGlkeXZlcnNlKQpsaWJyYXJ5KGdvb2dsZXNoZWV0czQpCmxpYnJhcnkocnR3ZWV0KQpsaWJyYXJ5KGpzb25saXRlKQpsaWJyYXJ5KHJsaXN0KQpsaWJyYXJ5KHBpcGVSKQpgYGAKCk9idGVuZXIgZWwgR29vZ2xlIFNoZWV0OgoKYGBge3J9CnNoZWV0X2lkIDwtICIxamhMTm1LdUdOVkVla25lcDI2VEZuTXNfT2VVakFiOHAyc0cxWXoyNmRfRSIKc3MgPC0gcmVhZF9zaGVldChzaGVldF9pZCkKZ2xpbXBzZShzcykKYGBgCgpDb21iaW5hciBub21icmVzIHBhcmEgYsO6c3F1ZWRhOiAKCmBgYHtyfQpjb21iaW5hX25vbWJyZXMgPC0gc3MgJT4lCiAgc2VsZWN0KGBOb21icmUgQ29tcGxldG9gKSAlPiUKICBtdXRhdGUobnAgPSBzdHJfY291bnQoYE5vbWJyZSBDb21wbGV0b2AsIHBhdHRlcm4gPSAiXFxTKyIpICkgJT4lCiAgc2VwYXJhdGUoYE5vbWJyZSBDb21wbGV0b2AsIGludG8gPSBjKCJwMSIsICJwMiIsICJwMyIsICJwNCIsICJwNSIsICJwNiIpLCBzZXAgPSAiICIsIHJlbW92ZSA9IEYpCmdsaW1wc2UoY29tYmluYV9ub21icmVzKQpgYGAKCiMgRGlzdHJpYnVjacOzbiBob3Jpem9udGFsCgojIyDDk3JnYW5vIGxlZ2lzbGF0aXZvCgpGaWx0cmFyOgoKYGBge3J9CnNzX2xlZ2lzbGF0aXZvIDwtIHNzICU+JQogICBmaWx0ZXIodGlwb19jYXJnbyAlaW4lIGMoIkRpcHV0YWRvIHVuaW5vbWluYWwiLCAiRGlwdXRhZG8gcGx1cmlub21pbmFsIiwgIlNlbmFkb3IiLCAiUmVwcmVzZW50YW50ZSBhbnRlIG9yZ2FuaXNtb3MgcGFybGFtZW50YXJpb3Mgc3VwcmFlc3RhdGFsZXMiLCAiRGlwdXRhZG8gZGUgbGFzIG5hY2lvbmVzIHkgcHVlYmxvcyBJLk8uQy4iKSkKYGBgCgpPYnRlbmVyIHVzdWFyaW9zIGRlIEFQSSBkZSBUd2l0dGVyOgoKYGBge3J9CnVzZXJzIDwtIHNzX2xlZ2lzbGF0aXZvJG5vbWJyZSAlPiUKICBtYXAoIH4gc2VhcmNoX3VzZXJzKHEgPSAueCwKICAgICAgICAgICAgICAgICAgICAgIG4gPSA1LAogICAgICAgICAgICAgICAgICAgICAgcGFyc2UgPSBGKSkKCndyaXRlX2pzb24odXNlcnMsICJ1c2Vyc190d2l0dGVyX2xlZ2lzbGF0aXZvLmpzb24iKQpgYGAKCkNvbWJpbmFyIGRhdG9zIHByZXZpb3MgY29uIGxvcyB1c3VhcmlvcyBlbmNvbnRyYWRvcyB5IHN1YmlyIGEgR29vZ2xlIFNoZWV0czoKYGBge3J9CnVzZXJzIDwtIGZyb21KU09OKCJ1c2Vyc190d2l0dGVyLmpzb24iKSAlPj4lIGxpc3QudW5ncm91cCgpCgpzY3JlZW5fbmFtZXMgPC0gbWFwKHVzZXJzLCB+IHsueFtbInNjcmVlbl9uYW1lIl1dfSkgJT4lIHRpYmJsZSgpCgpzcyA8LSBiaW5kX2NvbHMoc3MsIHNjcmVlbl9uYW1lcykgCnNzIDwtIHJlbmFtZShzcywgc2NyZWVuX25hbWUgPSAuKQpzczIgPC0gc3MgJT4lIHVubmVzdChzY3JlZW5fbmFtZSwga2VlcF9lbXB0eSA9IFQpCnNzMiA8LSBzczIgJT4lIG11dGF0ZSh0d2l0dGVyX3VybCA9IHN0cl9jKCJodHRwczovL3R3aXR0ZXIuY29tLyIsIHNjcmVlbl9uYW1lKSkKCndyaXRlX3NoZWV0KHNzMiwgc2hlZXRfaWQsIHNoZWV0ID0gImNvbl90d2l0dGVyIikKYGBgCiAKIyMgw5NyZ2FubyBlamVjdXRpdm8KCiMjIMOTcmdhbm8ganVkaWNpYWwKCiMjIMOTcmdhbm8gZWxlY3RvcmFsCgojIERpc3RyaWJ1Y2nDs24gdmVydGljYWwKCiMjIEdvYmllcm5vcyBkZXBhcnRhbWVudGFsZXMgZGVsIGVqZSB0cm9uY2FsCgpGaWx0cmFyOgoKYGBge3J9CnNzX2RlcGFydGFtZW50YWwgPC0gc3MgJT4lCiAgZmlsdGVyKHRpcG9fY2FyZ28gJWluJSBjKCJBc2FtYmxlw61zdGFzIERlcGFydGFtZW50YWxlcyBQb3IgVGVycml0b3JpbyIsICJBc2FtYmxlw61zdGFzIERlcGFydGFtZW50YWxlcyBQb3IgUG9ibGFjacOzbiIsICJHb2Jlcm5hZG9yIiwgIlZpY2Vnb2Jlcm5hZG9yIikpICU+JQogIGRyb3BfbmEobm9tYnJlKQoKZ2xpbXBzZShzc19kZXBhcnRhbWVudGFsKSAKYGBgCgpPYnRlbmVyIHVzdWFyaW9zIGRlIEFQSSBkZSBUd2l0dGVyOgoKYGBge3J9CnVzZXJzX2RlcGFydGFtZW50YWwgPC0gc3NfZGVwYXJ0YW1lbnRhbCRub21icmUgJT4lCiAgbmEub21pdCgpICU+JQogIG1hcCggfiBzZWFyY2hfdXNlcnMocSA9IC54LAogICAgICAgICAgICAgICAgICAgICAgbiA9IDUsCiAgICAgICAgICAgICAgICAgICAgICBwYXJzZSA9IEYpKQoKd3JpdGVfanNvbih1c2Vyc19kZXBhcnRhbWVudGFsLCAidXNlcnNfdHdpdHRlcl9kZXBhcnRhbWVudGFsLmpzb24iKQpgYGAKCiMjIEdvYmllcm5vcyBtdW5pY2lwYWxlcyBkZWwgZWplIHRyb25jYWwKCmBgYHtyfQpzc19tdW5pY2lwYWwgPC0gc3MgJT4lCiAgZmlsdGVyKHRpcG9fY2FyZ28gJWluJSBjKCJDb25jZWphbCIsICJBbGNhbGRlIikpICU+JQogIGRyb3BfbmEobm9tYnJlKQoKZ2xpbXBzZShzc19tdW5pY2lwYWwpIApgYGAKCk9idGVuZXIgdXN1YXJpb3MgZGUgQVBJIGRlIFR3aXR0ZXI6CgpgYGB7cn0KdXNlcnNfZGVwYXJ0YW1lbnRhbCA8LSBzc19kZXBhcnRhbWVudGFsJG5vbWJyZSAlPiUKICBuYS5vbWl0KCkgJT4lCiAgbWFwKCB+IHNlYXJjaF91c2VycyhxID0gLngsCiAgICAgICAgICAgICAgICAgICAgICBuID0gNSwKICAgICAgICAgICAgICAgICAgICAgIHBhcnNlID0gRikpCgp3cml0ZV9qc29uKHVzZXJzX2RlcGFydGFtZW50YWwsICJ1c2Vyc190d2l0dGVyX2RlcGFydGFtZW50YWwuanNvbiIpCmBgYAoK</div>
 
 
 </div>

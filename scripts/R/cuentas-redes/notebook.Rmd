@@ -8,7 +8,6 @@ output:
       toc_float: true
 ---
 
-
 ```{r}
 library(tidyverse)
 library(googlesheets4)
@@ -18,19 +17,16 @@ library(rlist)
 library(pipeR)
 ```
 
-# Distribución horizontal
-
-## Órgano legislativo
-
 Obtener el Google Sheet:
 
 ```{r}
-sheet_id <- "12rPbzdVkrnXUvfkIDbGS1kftRCum6CMyH6_ZZUxibHM"
+sheet_id <- "1jhLNmKuGNVEeknep26TFnMs_OeUjAb8p2sG1Yz26d_E"
 ss <- read_sheet(sheet_id)
 glimpse(ss)
 ```
 
 Combinar nombres para búsqueda: 
+
 ```{r}
 combina_nombres <- ss %>%
   select(`Nombre Completo`) %>%
@@ -39,16 +35,26 @@ combina_nombres <- ss %>%
 glimpse(combina_nombres)
 ```
 
+# Distribución horizontal
+
+## Órgano legislativo
+
+Filtrar:
+
+```{r}
+ss_legislativo <- ss %>%
+   filter(tipo_cargo %in% c("Diputado uninominal", "Diputado plurinominal", "Senador", "Representante ante organismos parlamentarios supraestatales", "Diputado de las naciones y pueblos I.O.C."))
+```
+
 Obtener usuarios de API de Twitter:
 
 ```{r}
-users <- combina_nombres$`Nombre Completo` %>%
+users <- ss_legislativo$nombre %>%
   map( ~ search_users(q = .x,
                       n = 5,
-                      parse = F)) %>%
+                      parse = F))
 
-write_json(users, "users_twitter.json")
-
+write_json(users, "users_twitter_legislativo.json")
 ```
 
 Combinar datos previos con los usuarios encontrados y subir a Google Sheets:
@@ -60,12 +66,11 @@ screen_names <- map(users, ~ {.x[["screen_name"]]}) %>% tibble()
 ss <- bind_cols(ss, screen_names) 
 ss <- rename(ss, screen_name = .)
 ss2 <- ss %>% unnest(screen_name, keep_empty = T)
-ss2 <- ss2 %>% mutate(url = str_c("https://twitter.com/", screen_name))
+ss2 <- ss2 %>% mutate(twitter_url = str_c("https://twitter.com/", screen_name))
 
 write_sheet(ss2, sheet_id, sheet = "con_twitter")
 ```
  
-
 ## Órgano ejecutivo
 
 ## Órgano judicial
@@ -74,6 +79,49 @@ write_sheet(ss2, sheet_id, sheet = "con_twitter")
 
 # Distribución vertical
 
-## Gobiernos departamentales
+## Gobiernos departamentales del eje troncal
 
-## Gobiernos municipales
+Filtrar:
+
+```{r}
+ss_departamental <- ss %>%
+  filter(tipo_cargo %in% c("Asambleístas Departamentales Por Territorio", "Asambleístas Departamentales Por Población", "Gobernador", "Vicegobernador")) %>%
+  drop_na(nombre)
+
+glimpse(ss_departamental) 
+```
+
+Obtener usuarios de API de Twitter:
+
+```{r}
+users_departamental <- ss_departamental$nombre %>%
+  na.omit() %>%
+  map( ~ search_users(q = .x,
+                      n = 5,
+                      parse = F))
+
+write_json(users_departamental, "users_twitter_departamental.json")
+```
+
+## Gobiernos municipales del eje troncal
+
+```{r}
+ss_municipal <- ss %>%
+  filter(tipo_cargo %in% c("Concejal", "Alcalde")) %>%
+  drop_na(nombre)
+
+glimpse(ss_municipal) 
+```
+
+Obtener usuarios de API de Twitter:
+
+```{r}
+users_departamental <- ss_departamental$nombre %>%
+  na.omit() %>%
+  map( ~ search_users(q = .x,
+                      n = 5,
+                      parse = F))
+
+write_json(users_departamental, "users_twitter_departamental.json")
+```
+
