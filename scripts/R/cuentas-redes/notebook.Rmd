@@ -21,7 +21,7 @@ Obtener el Google Sheet:
 
 ```{r}
 sheet_id <- "1jhLNmKuGNVEeknep26TFnMs_OeUjAb8p2sG1Yz26d_E"
-ss <- read_sheet(sheet_id)
+ss <- read_sheet(sheet_id, sheet = "Hoja 1")
 glimpse(ss)
 ```
 
@@ -59,7 +59,7 @@ write_json(users, "users_twitter_legislativo.json")
 
 Combinar datos previos con los usuarios encontrados y subir a Google Sheets:
 ```{r}
-users <- fromJSON("users_twitter.json") %>>% list.ungroup()
+users <- fromJSON("users_twitter.json") %>% list.ungroup()
 
 screen_names <- map(users, ~ {.x[["screen_name"]]}) %>% tibble()
 
@@ -103,6 +103,22 @@ users_departamental <- ss_departamental$nombre %>%
 write_json(users_departamental, "users_twitter_departamental.json")
 ```
 
+Combinar datos previos con los usuarios encontrados y subir a Google Sheets:
+
+```{r}
+users_departamental <- users_departamental %>% list.ungroup()
+
+screen_names_departamental <- map(users_departamental, ~ {.x[["screen_name"]]}) %>% tibble()
+
+ss_departamental <- bind_cols(ss_departamental, screen_names_departamental) %>%
+  rename(screen_name = '.')
+
+ss_departamental <- ss_departamental %>% unnest(screen_name, keep_empty = T) %>%
+  mutate(twitter_url = str_c("https://twitter.com/", screen_name))
+
+write_sheet(ss_departamental, sheet_id, sheet = "twitter_dep")
+```
+
 ## Gobiernos municipales del eje troncal
 
 ```{r}
@@ -116,12 +132,50 @@ glimpse(ss_municipal)
 Obtener usuarios de API de Twitter:
 
 ```{r}
-users_departamental <- ss_departamental$nombre %>%
+users_municipal<- ss_municipal$nombre %>%
   na.omit() %>%
   map( ~ search_users(q = .x,
                       n = 5,
                       parse = F))
 
-write_json(users_departamental, "users_twitter_departamental.json")
+write_json(users_municipal, "users_twitter_municipal.json")
+```
+
+Combinar datos previos con los usuarios encontrados y subir a Google Sheets:
+
+```{r}
+users_municipal <- users_municipal %>% list.ungroup()
+
+screen_names_municipal<- map(users_municipal, ~ {.x[["screen_name"]]}) %>% tibble()
+
+ss_municipal <- bind_cols(ss_municipal, screen_names_municipal) %>%
+  rename(screen_name = '.')
+
+ss_municipal <- ss_municipal %>% unnest(screen_name, keep_empty = T) %>%
+  mutate(twitter_url = str_c("https://twitter.com/", screen_name))
+
+write_sheet(ss_municipal, sheet_id, sheet = "twitter_mun")
+```
+# Joins
+
+```{r}
+
+twitter_asamb <- read_sheet(sheet_id, sheet = "twitter_asamb") %>%
+  filter(check_twitter_url == "Si")
+
+twitter_dep <- read_sheet(sheet_id, sheet = "twitter_dep") %>%
+  filter(check_twitter_url == "Si") %>%
+  select(names(twitter_asamb))
+
+twitter_mun <- read_sheet(sheet_id, sheet = "twitter_mun") %>%
+  filter(check_twitter_url == "Si") %>%
+  select(names(twitter_asamb))
+
+twitter_urls <- bind_rows(twitter_asamb, twitter_dep, twitter_mun)
+
+ss_twitter <- ss %>%
+  left_join(twitter_urls, by = "nombre")
+
+write_sheet(ss_twitter, sheet_id, sheet = "con_twitter")
 ```
 
